@@ -1,0 +1,1 @@
+GenerationCalculator is a Django project where the basics of python web developing are applied

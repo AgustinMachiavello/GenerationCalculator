@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <title>My Generation</title>      
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <h1 class="text-center">Which is my generation?</h1>
+            </header>
+            <img class="d-block mx-auto mb-4" src="https://png.pngtree.com/element_origin_min_pic/16/12/19/cf86018406394917bd1334e7fdfee945.jpg" alt width="250" height="250">
+
+            <p class="text-center">Enter the year of your birth<br>Example: 1998</p>
+        </div>
+
+        <div class="container-fluid col-md-5">
+            <form  method="post" class="needs-validation text-center" novalidate>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="col mb-5">
+                        <!--<label for="birthyear">Year of birth</label>-->
+                        <!--<input type="number" class="form-control" id="birthyear" name="number" placeholder value required>-->
+                        <input type="submit" name="search" value="SUBMIT">
+                        <div class="invalid-feedback">Valid year of birth required</div>
+                        
+                    </div>
+            </form>
+        </div>
+        <div class="container-fluid col-md-5 text-center">
+
+            <h3 class="text-dark">{{ generation.name }}</h3>
+            <p class="lead">{{ generation.description }}</p>
+        </div>
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        <footer class="text-center"><h5>2018 License</h5></footer>
+    </body>
+
+</html>

@@ -1,0 +1,114 @@
+/*-- Cuerpo  --*/
+body{
+    background: #f3c0ff;
+    font-family: arial;
+    margin: 10px;
+}
+/*-- Cabeceras h2--*/
+h2{
+    color: chocolate
+}
+/*--  Links --*/
+a{   
+    color: blue;
+}
+
+header{
+    background: #999;
+    color: white;
+    padding: 15px 15px 0 15px;
+}
+
+header h1{
+    margin: 0;
+    display: inline;   
+}
+
+nav ul{
+    margin: 0;
+    padding: 0 0 0 15px;
+    display: inline;
+}
+nav ul li{
+    background: black;
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+footer{
+    
+}
+
+.row:after{
+    clear: both;
+    content: " ";
+    display: table
+}
+
+.col{
+    background: #333;
+    border-radius: 5px;
+    padding: .5%;
+    float: left;
+    margin: .5%;
+    width: 31%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.secondary{
+    background: green;
+    color:crimson;
+    padding: 10px 0px;</*Estos son los margenes de arriba y de la izq */
+}
+/*-- id --*/
+#special{
+    background: blue;   
+}
+
+p{
+        text-align: center;
+        -webkit-animation: color-change 1s infinite;
+        -moz-animation: color-change 1s infinite;
+        -o-animation: color-change 1s infinite;
+        -ms-animation: color-change 1s infinite;
+        animation: color-change 1s infinite;
+        font-size: 300%
+    }
+
+    @-webkit-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-moz-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-ms-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-o-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
